@@ -1,0 +1,22 @@
+{
+  "name": "micro-frontend-basic",
+  "version": "1.0.0",
+  "description": "Micro Frontend Architecture with Shell and Common Components",
+  "scripts": {
+    "start": "concurrently \"npm run start:shell\" \"npm run start:common\"",
+    "start:shell": "cd shell && npm start",
+    "start:common": "cd common-components-lib && npm start",
+    "install:all": "concurrently \"npm run install:shell\" \"npm run install:common\"",
+    "install:shell": "cd shell && npm install",
+    "install:common": "cd common-components-lib && npm install",
+    "build": "concurrently \"npm run build:shell\" \"npm run build:common\"",
+    "build:shell": "cd shell && npm run build",
+    "build:common": "cd common-components-lib && npm run build",
+    "clean": "rimraf shell/node_modules common-components-lib/node_modules && echo 'Cleaned node_modules'",
+    "preinstall": "npx concurrently --version || npm install -g concurrently"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "rimraf": "^5.0.0"
+  }
+}
