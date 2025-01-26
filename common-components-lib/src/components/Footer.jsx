@@ -4,7 +4,7 @@ import "../styles/footer.css";
 function Footer() {
   return (
     <div className="footer">
-      <p>Siddharth Koundal.</p>
+      <p>Siddharth Koundal</p>
     </div>
   );
 }
