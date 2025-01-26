@@ -58,6 +58,10 @@
   color: #3498db;
 }
 
+.contact-item p {
+  margin: 0;
+}
+
 .social-links {
   display: flex;
   gap: 20px;
