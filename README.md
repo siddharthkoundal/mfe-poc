@@ -1,35 +1,6 @@
-# Micro Frontend Basic
+# Micro Frontend POC
 
 A micro frontend architecture project demonstrating the integration of a shell application with common components library. This project showcases a portfolio website with modular components and clean architecture.
-
-## Project Structure
-
-```
-micro-frontend-basic/
-├── shell/                    # Main shell application
-│   ├── src/                 # Source files
-│   │   ├── components/     # Shell-specific components
-│   │   ├── App.jsx        # Main App component
-│   │   └── index.css      # Global styles
-│   ├── package.json       # Shell dependencies
-│   └── webpack.config.js  # Shell webpack configuration
-│
-├── common-components-lib/    # Shared components library
-│   ├── src/                # Source files
-│   │   ├── components/    # Reusable components
-│   │   ├── styles/       # Component styles
-│   │   ├── App.jsx       # Library App component
-│   │   └── index.css     # Global styles
-│   ├── package.json      # Library dependencies
-│   └── webpack.config.js # Library webpack configuration
-│
-└── package.json             # Root level package.json
-```
-
-## Prerequisites
-
-- Node.js (v14 or higher)
-- npm (v6 or higher)
 
 ## Features
 
@@ -43,14 +14,13 @@ micro-frontend-basic/
   - Education
   - Contact
 - Dynamic routing
-- Optimized performance
 
 ## Setup Instructions
 
 1. Clone the repository:
 
 ```bash
-git clone [repository-url]
+git clone https://github.com/siddharthkoundal/mfe-poc.git
 cd micro-frontend-basic
 ```
 
@@ -188,13 +158,3 @@ Common Components:
 3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details
-
-## Acknowledgments
-
-- Modern micro frontend architecture
-- React team for excellent documentation
-- Open source community for inspiration
