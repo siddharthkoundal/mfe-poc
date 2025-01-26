@@ -1,0 +1,51 @@
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Full viewport height */
+  }
+
+  /* Allow the main content to grow and take available space */
+  .main-content {
+    flex: 1; /* Pushes the footer to the bottom when content is short */
+    padding: 20px;
+  }
+
+  /* Footer styles */
+  .footer {
+    width: 100%;
+    background-color: #ffffff;
+    color: #2c3e50;
+    text-align: center;
+    padding: 20px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: auto; /* This helps push footer to bottom */
+  }
+
+  .footer p {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .footer a {
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  .footer a:hover {
+    color: #2980b9;
+  }
+
+  @media screen and (max-width: 768px) {
+    .footer {
+      padding: 15px 5px;
+    }
+
+    .footer p {
+      font-size: 0.9rem;
+    }
+  }
